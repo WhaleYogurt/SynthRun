@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Rotation and look
     private float xRotation;
-    private float sensitivity = 50f;
+    private float sensitivity = 100f;
     private float sensMultiplier = 1f;
 
     //Movement
@@ -162,8 +162,8 @@ public class PlayerMovement : MonoBehaviour
         // Movement in air
         if (!grounded)
         {
-            multiplier = 0.5f;
-            multiplierV = 0.5f;
+            multiplier = 0.75f;
+            multiplierV = 0.75f;
         }
 
         // Movement while sliding
@@ -178,7 +178,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if ((grounded || wallRunning || surfing) && readyToJump)
         {
-            MonoBehaviour.print("jumping");
             Vector3 velocity = rb.velocity;
             readyToJump = false;
             rb.AddForce(Vector2.up * jumpForce * 1.5f);
@@ -339,9 +338,7 @@ public class PlayerMovement : MonoBehaviour
         if (wallRunning)
         {
             rb.AddForce(-wallNormalVector * Time.deltaTime * moveSpeed * 2f);
-            Debug.Log(-wallNormalVector * Time.deltaTime * moveSpeed * 2f);
             rb.AddForce(Vector3.up * Time.deltaTime * rb.mass * 100f * wallRunGravity);
-            Debug.Log(-wallNormalVector * Time.deltaTime * moveSpeed * 2f);
         }
     }
 

@@ -165,7 +165,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt"
@@ -191,7 +191,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 45613,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/UnityEngine.TestRunner.rsp2"
@@ -1816,7 +1816,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 51656,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.UnityAdditionalFile.txt"
@@ -1842,7 +1842,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 90691,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.rsp2"
@@ -2349,7 +2349,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 96821,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/RuntimeAssembly.UnityAdditionalFile.txt"
@@ -2375,7 +2375,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 131624,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/RuntimeAssembly.rsp2"
@@ -2833,7 +2833,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 137833,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.UnityAdditionalFile.txt"
@@ -2859,7 +2859,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 174898,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.rsp2"
@@ -3329,7 +3329,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 181106,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.UnityAdditionalFile.txt"
@@ -3355,7 +3355,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 219249,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.rsp2"
@@ -3839,7 +3839,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 225466,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.UnityAdditionalFile.txt"
@@ -3865,7 +3865,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 311355,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.rsp2"
@@ -4704,7 +4704,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 317584,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.UnityAdditionalFile.txt"
@@ -4730,7 +4730,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 398883,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.rsp2"
@@ -5565,7 +5565,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 405201,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.UnityAdditionalFile.txt"
@@ -5591,7 +5591,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 440506,
       "PayloadLength": 41,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Kanie",
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\willy\\Titan",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.rsp2"
@@ -6059,7 +6059,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 446901,
       "PayloadLength": 28,
-      "PayloadDebugContentSnippet": "C:\\Users\\willy\\Kaniel-Killer",
+      "PayloadDebugContentSnippet": "C:\\Users\\willy\\TitanFallLike",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.UnityAdditionalFile.txt"
@@ -6071,7 +6071,7 @@
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 447015,
-      "PayloadLength": 32203,
+      "PayloadLength": 32344,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -6083,7 +6083,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 479305,
+      "PayloadOffset": 479446,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -6294,11 +6294,14 @@
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.ref.dll",
         "Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll",
         "Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll",
+        "Assets/GameManager.cs",
+        "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs",
         "Assets/Scripts/BreakOnHit.cs",
         "Assets/Scripts/DestroyAfterTime.cs",
         "Assets/Scripts/MoveCamera.cs",
         "Assets/Scripts/PlayerMovement.cs",
         "Assets/Scripts/Respawn.cs",
+        "Assets/Scripts/WinPoint.cs",
         "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
         "Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.rsp"
@@ -6395,7 +6398,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 479401,
+      "PayloadOffset": 479542,
       "PayloadLength": 6384,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -6843,7 +6846,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)",
       "DisplayName": "BuildPlayerDataGenerator RuntimeInitializeOnLoads",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\RuntimeAssembly.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\Bee\\PlayerScriptAssemblies\" -s=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\willy\\Kaniel-Killer\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\RuntimeAssembly.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\willy\\TitanFallLike\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\willy\\TitanFallLike\\Library\\Bee\\PlayerScriptAssemblies\" -s=\"C:\\Users\\willy\\TitanFallLike\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\willy\\TitanFallLike\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -7071,6 +7074,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aP.dag.json",
-  "PayloadsFile": "C:/Users/willy/Kaniel-Killer/Library/Bee/1900b0aP.dag.payloads",
+  "PayloadsFile": "C:/Users/willy/TitanFallLike/Library/Bee/1900b0aP.dag.payloads",
   "RelativePathToRoot": "../.."
 }

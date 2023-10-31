@@ -4,6 +4,10 @@ ScriptsOnlyBuild:
     - BreakOnHit
     - MoveCamera
     - PlayerMovement
+    - Respawn
+    RuntimeAssembly.dll:
+    - Fracture
+    - UnfreezeFragment
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -16,7 +20,16 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses: {}
+  serializedClasses:
+    RuntimeAssembly:
+    - CallbackOptions
+    - FractureOptions
+    - RefractureOptions
+    - TriggerOptions
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.UnityEvent
+    - UnityEngine.Events.UnityEvent`3[UnityEngine.Collider,UnityEngine.GameObject,UnityEngine.Vector3]
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -46,6 +59,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 75
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -55,11 +70,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 6686}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 5080}
     - Class: 114
-      Script: {instanceID: 7330}
+      Script: {instanceID: 6804}
+    - Class: 114
+      Script: {instanceID: 7266}
+    - Class: 114
+      Script: {instanceID: 7458}
+    - Class: 114
+      Script: {instanceID: 53348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -207,6 +228,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionEnterMessageListener
   - hash:
       serializedVersion: 2
+      Hash: b3f8cef527d6703045eeb0f94f99c25e
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: UnfreezeFragment
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -229,6 +256,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 204c5cf3f2acfa9d18af124ce0a3e484
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: Projectile
   - hash:
       serializedVersion: 2
       Hash: 34fa63a30926bcf55d7323dae76be890
@@ -265,6 +298,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: UniqueMaterial
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -351,10 +390,22 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 370fb957f88424385021c640f14bcbdd
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 52f8813851d391ae0456e551a4035f24
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: Slice
   - hash:
       serializedVersion: 2
       Hash: 747284d692f6c45bae4955ed655ed04c
@@ -379,6 +430,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 2ed211e39c7be0434e5e9d1a5aae8745
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: ToggleText
   - hash:
       serializedVersion: 2
       Hash: 0286ed84936a6e3c4dba049ae21a7b1c
@@ -543,6 +600,12 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerStayMessageListener
   - hash:
       serializedVersion: 2
+      Hash: fbc0caeda0825417de5a7c03c7f3d345
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: Prefracture
+  - hash:
+      serializedVersion: 2
       Hash: fa7c62595553866a25a1f687b1914fd2
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -583,6 +646,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: b331a3209fa5bb7f0cc142421d0d8237
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: Fracture
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -649,6 +718,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b0c19a6a0d69647c778de81447c04108
+    assemblyName: RuntimeAssembly
+    namespaceName: 
+    className: PlaneSlicer
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -873,10 +948,16 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: aeccbe59bb9131d02cce1d0671ca233d
+      Hash: 871f1b5765f7d87d92be70443beb6675
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: BreakOnHit
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DestroyAfterTime
   - hash:
       serializedVersion: 2
       Hash: afe1800287c9574079eab3fea2622416
@@ -913,7 +994,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: bf28d7cfaf5910dae9442a7bc3107fbf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Respawn
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/willy/TitanFallLike/Builds/TitanFallLike.exe
+  playerPath: C:/Users/willy/Kaniel-Killer/Build/TitanFallLike.exe

@@ -27,6 +27,7 @@ public class WinPoint : MonoBehaviour
     void Update()
     {
         UpdateTimerUI();
+        bestTime = PlayerPrefs.GetFloat("BestTime", float.MaxValue);
     }
 
     void OnDestroy()
@@ -34,10 +35,6 @@ public class WinPoint : MonoBehaviour
         PlayerPrefs.SetFloat("BestTime", bestTime);
     }
 
-    void OnApplicationQuit()
-    {
-        PlayerPrefs.DeleteKey("BestTime");  // Delete the best time when the application quits
-    }
 
     void OnCollisionEnter(Collision collision)
     {
@@ -48,6 +45,7 @@ public class WinPoint : MonoBehaviour
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTime", bestTime);
                 bestTimeText.text = FormatTime(bestTime);
             }
 
@@ -72,6 +70,6 @@ public class WinPoint : MonoBehaviour
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;
         int milliseconds = (int)(time * 100) % 100;
-        return string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, milliseconds);
+        return string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
     }
 }

@@ -1,2 +1,6 @@
-
-Library
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+Assets/AssetStoreTools*
+*.pidb.meta
+*.bak*

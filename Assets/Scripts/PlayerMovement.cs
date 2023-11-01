@@ -159,12 +159,13 @@ public class PlayerMovement : MonoBehaviour
         //Some multipliers
         float multiplier = 1f, multiplierV = 1f;
 
-        // Movement in air
+        /* Movement in air
         if (!grounded)
         {
             multiplier = 0.75f;
             multiplierV = 0.75f;
         }
+        */
 
         // Movement while sliding
         if (grounded && crouching) multiplierV = 0f;

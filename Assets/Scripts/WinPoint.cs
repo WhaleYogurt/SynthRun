@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;  // Import this namespace
 
 public class WinPoint : MonoBehaviour
 {
-    public Vector3 respawnPosition;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI bestTimeText;
     private float startTime;
@@ -66,7 +65,7 @@ public class WinPoint : MonoBehaviour
                 // Update the displayed best time immediately
                 bestTimeText.text = FormatTime(bestTime);
             }
-            otherGameObject.transform.position = respawnPosition;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             StartTimer();
         }
     }

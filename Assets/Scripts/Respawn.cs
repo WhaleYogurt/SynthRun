@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
 {
@@ -8,10 +9,9 @@ public class Respawn : MonoBehaviour
     
     void OnCollisionEnter(Collision collision)
     {
-        GameObject otherGameObject = collision.gameObject;
         if (collision.gameObject.name == "Player")
         {
-            otherGameObject.transform.position = RespawnPosition;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

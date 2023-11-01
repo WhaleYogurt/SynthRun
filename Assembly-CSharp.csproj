@@ -61,6 +61,7 @@
     <Compile Include="Assets\SpeedBoost.cs" />
     <Compile Include="Assets\Scripts\DestroyAfterTime.cs" />
     <Compile Include="Assets\Scripts\BreakOnHit.cs" />
+    <Compile Include="Assets\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\FOVController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />

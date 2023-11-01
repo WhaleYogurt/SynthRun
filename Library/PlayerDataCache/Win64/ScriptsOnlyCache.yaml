@@ -74,21 +74,21 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
-    methodName: ShowResetConfirmation
-  - assembly: Assembly-CSharp
-    fullTypeName: PauseMenu
-    methodName: Resume
+    methodName: CancelReset
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: ConfirmReset
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
+    methodName: ShowResetConfirmation
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
-    methodName: CancelReset
+    methodName: Resume
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Level 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -1128,5 +1128,5 @@ ScriptsOnlyBuild:
     className: PauseMenu
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Level 1.unity
   playerPath: C:/Users/willy/TitanFallLike/Build/TitanFallLike.exe

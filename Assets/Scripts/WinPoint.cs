@@ -1,71 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.SceneManagement;  // Import this namespace
 
 public class WinPoint : MonoBehaviour
 {
-    public Vector3 RespawnPosition;
+    public Vector3 respawnPosition;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI bestTimeText;
-
     private float startTime;
     private float bestTime;
+    private bool timerActive = true;
+    private string bestTimeKey;  // Key used to save the best time
 
     void Start()
     {
-        bestTime = PlayerPrefs.GetFloat("BestTime", float.MaxValue);
+        bestTimeKey = SceneManager.GetActiveScene().name + "_BestTime";  // Unique key for each scene
+        bestTime = PlayerPrefs.GetFloat(bestTimeKey, float.MaxValue);
         StartTimer();
+
         UpdateTimerUI();
+
+        // Display the best time if it exists, otherwise display a placeholder
         if (bestTime != float.MaxValue)
         {
             bestTimeText.text = FormatTime(bestTime);
         }
+        else
+        {
+            bestTimeText.text = "00:00.00";
+        }
     }
+
 
     void Update()
     {
-        UpdateTimerUI();
-        bestTime = PlayerPrefs.GetFloat("BestTime", float.MaxValue);
+        bestTime = PlayerPrefs.GetFloat(bestTimeKey, float.MaxValue);
+        if (bestTime != float.MaxValue)
+        {
+            bestTimeText.text = FormatTime(bestTime);
+        }
+        else
+        {
+            bestTimeText.text = "00:00.00";
+        }
+        if (timerActive)
+        {
+            UpdateTimerUI();
+        }
     }
 
-    void OnDestroy()
-    {
-        PlayerPrefs.SetFloat("BestTime", bestTime);
-    }
-
-
-    void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         GameObject otherGameObject = collision.gameObject;
         if (collision.gameObject.name == "Player")
         {
+            timerActive = false;
             float currentTime = Time.time - startTime;
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTime", bestTime);
+                PlayerPrefs.SetFloat(bestTimeKey, bestTime);
+
+                // Update the displayed best time immediately
                 bestTimeText.text = FormatTime(bestTime);
             }
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            otherGameObject.transform.position = respawnPosition;
+            StartTimer();
         }
     }
 
-    void StartTimer()
+
+    private void StartTimer()
     {
         startTime = Time.time;
+        timerActive = true;
     }
 
-    void UpdateTimerUI()
+    private void UpdateTimerUI()
     {
         float currentTime = Time.time - startTime;
         timerText.text = FormatTime(currentTime);
-        timerText.color = (currentTime > bestTime && bestTime != float.MaxValue) ? Color.red : Color.white;
+        timerText.color = (currentTime > bestTime) ? Color.red : Color.white;
     }
 
-    string FormatTime(float time)
+    private string FormatTime(float time)
     {
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;

@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,6 +9,23 @@ public class PauseMenu : MonoBehaviour
     public GameObject resetTimeConfirmationUI;
 
     private bool isPaused = false;
+    private string bestTimeKey;
+
+    void Start()
+    {
+        bestTimeKey = SceneManager.GetActiveScene().name + "_BestTime";
+        float bestTime = PlayerPrefs.GetFloat(bestTimeKey, float.MaxValue);
+
+        if (bestTime != float.MaxValue)
+        {
+            bestTimeText.text = FormatTime(bestTime);
+        }
+        else
+        {
+            bestTimeText.text = "00:00.00";
+        }
+    }
+
 
     void Update()
     {
@@ -49,7 +67,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ConfirmReset()
     {
-        PlayerPrefs.DeleteKey("BestTime");
+        PlayerPrefs.DeleteKey(bestTimeKey);
         bestTimeText.text = "00:00.00";
         resetTimeConfirmationUI.SetActive(false);
     }
@@ -68,12 +86,11 @@ public class PauseMenu : MonoBehaviour
         #endif
     }
 
-
     private string FormatTime(float time)
     {
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;
         int milliseconds = (int)(time * 100) % 100;
-        return string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+        return string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, milliseconds);
     }
 }

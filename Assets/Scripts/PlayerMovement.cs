@@ -265,11 +265,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Find the velocity relative to where the player is looking
-    /// Useful for vectors calculations regarding movement and limiting movement
-    /// </summary>
-    /// <returns></returns>
+    /*  <summary>
+        Find the velocity relative to where the player is looking
+        Useful for vectors calculations regarding movement and limiting movement
+        </summary>
+        <returns></returns>
+    */
     public Vector2 FindVelRelativeToLook()
     {
         float current = orientation.transform.eulerAngles.y;

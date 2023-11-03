@@ -12,6 +12,7 @@ public class WinPoint : MonoBehaviour
     private float bestTime;
     private bool timerActive = true;
     private string bestTimeKey;  // Key used to save the best time
+    public LevelTimeTracker levelTimeTracker;
 
     void Start()
     {
@@ -65,6 +66,7 @@ public class WinPoint : MonoBehaviour
                 // Update the displayed best time immediately
                 bestTimeText.text = FormatTime(bestTime);
             }
+            levelTimeTracker.OnLevelCompleted(currentTime, bestTime);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             StartTimer();
         }

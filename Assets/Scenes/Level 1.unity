@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5530126, g: 0.66507643, b: 0.83716184, a: 1}
+  m_IndirectSpecularColor: {r: 0.5530126, g: 0.6650693, b: 0.83716184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -275,6 +275,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e915835224a2ff41867ae7edfbc80ff, type: 3}
+--- !u!114 &169472417 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4000942936703030709, guid: e544bf33ef59c01429ddb966d01a51f6, type: 3}
+  m_PrefabInstance: {fileID: 8677967047928760866}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &246743106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1256,6 +1267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 463392399}
   bestTimeText: {fileID: 60535858}
+  levelTimeTracker: {fileID: 1928579089}
 --- !u!4 &820430301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4472687852630552822, guid: 1e915835224a2ff41867ae7edfbc80ff, type: 3}
@@ -2905,6 +2917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928579088}
   - component: {fileID: 1928579087}
+  - component: {fileID: 1928579089}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -2946,6 +2959,19 @@ Transform:
   - {fileID: 1004586109}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928579089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928579086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cbb3b0f17383e49bedb2d062e7f76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeDisplay: {fileID: 169472417}
 --- !u!4 &1942872883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8492948894290922246, guid: c038dbee6497f42479a957cd56157620, type: 3}

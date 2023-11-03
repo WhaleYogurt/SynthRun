@@ -81,18 +81,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LevelSelection
     methodName: CloseLevelSelection
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelSelection
-    methodName: ShowLevelSelection
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: CancelReset
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: ConfirmReset
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelection
+    methodName: ShowLevelSelection
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: ShowResetConfirmation
@@ -105,18 +105,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LevelSelection
     methodName: CloseLevelSelection
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelSelection
-    methodName: ShowLevelSelection
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: CancelReset
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: ConfirmReset
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelSelection
+    methodName: ShowLevelSelection
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: ShowResetConfirmation
@@ -1140,7 +1140,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: a24e9c6293e0f8f0225430b703cb44d6
+      Hash: 05db438fde7765059e062d49a60ff8a6
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerMovement
@@ -1280,4 +1280,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Level 1.unity
   - Assets/Scenes/Level 2.unity
-  playerPath: C:/Users/willy/Kaniel-Killer/Build/TitanFallLike.exe
+  playerPath: C:/Users/willy/TitanFallLike/Build/TitanFallLike.exe

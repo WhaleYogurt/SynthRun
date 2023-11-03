@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     //Sliding
     private Vector3 normalVector = Vector3.up;
     private Vector3 wallNormalVector;
-
+    
     //Wallrunning
     public bool wallRunning;
     private Vector3 wallRunPos;
@@ -61,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
     private bool cancellingGrounded;
     private bool cancellingWall;
     private bool cancellingSurf;
+    [SerializeField]
+    private string tagStandingOn = null;
 
     void Awake()
     {
@@ -73,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
+
     private void LateUpdate()
     {
         WallRunning();
@@ -89,9 +92,16 @@ public class PlayerMovement : MonoBehaviour
         Look();
     }
 
-    /// <summary>
-    /// Find user input. Should put this in its own class but im lazy
-    /// </summary>
+    private void OnCollisionEnter(Collision collision)
+    {
+        tagStandingOn = collision.gameObject.tag;
+    }
+
+    private void OnCollisionExit()
+    {
+        tagStandingOn = null;
+    }
+
     private void MyInput()
     {
         x = Input.GetAxisRaw("Horizontal");
@@ -159,14 +169,6 @@ public class PlayerMovement : MonoBehaviour
         //Some multipliers
         float multiplier = 1f, multiplierV = 1f;
 
-        /* Movement in air
-        if (!grounded)
-        {
-            multiplier = 0.75f;
-            multiplierV = 0.75f;
-        }
-        */
-
         // Movement while sliding
         if (grounded && crouching) multiplierV = 0f;
 
@@ -191,9 +193,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity = new Vector3(velocity.x, velocity.y / 2f, velocity.z);
             }
-            if (wallRunning)
+            if (wallRunning && tagStandingOn != "Redirect")
             {
                 rb.AddForce(wallNormalVector * jumpForce * 3f);
+            }
+            else if (wallRunning && tagStandingOn == "Redirect")
+            {
+                Vector3 lookDirection = playerCam.forward;
+                float currentSpeed = rb.velocity.magnitude;
+                rb.velocity = lookDirection * currentSpeed;
             }
             Invoke("ResetJump", jumpCooldown);
             if (wallRunning)

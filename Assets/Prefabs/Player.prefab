@@ -1072,8 +1072,8 @@ RectTransform:
   - {fileID: 7324432715494696882}
   - {fileID: 4769104483390177516}
   - {fileID: 2520888472582676360}
-  - {fileID: 7175861850362265181}
   - {fileID: 7605403923435119282}
+  - {fileID: 7175861850362265181}
   - {fileID: 1507242572728636019}
   m_Father: {fileID: 688673006146735173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1418,6 +1418,7 @@ MonoBehaviour:
   slideCounterMovement: 0.2
   jumpForce: 4000
   wallRunning: 0
+  tagStandingOn: 
 --- !u!114 &6946614394157444438
 MonoBehaviour:
   m_ObjectHideFlags: 0

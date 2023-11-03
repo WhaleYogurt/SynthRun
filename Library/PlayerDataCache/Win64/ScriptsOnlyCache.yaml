@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - FOVController
     - GameManager
     - LevelSelection
+    - LevelTimeTracker
     - MoveCamera
     - PauseMenu
     - PlayerMovement
@@ -43,6 +44,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Unity.TextMeshPro:
@@ -76,6 +78,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
@@ -102,6 +105,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: Resume
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: LevelSelection
     methodName: CloseLevelSelection
@@ -191,15 +200,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4800}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 4996}
     - Class: 114
-      Script: {instanceID: 5206}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 5762}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6074}
+    - Class: 114
+      Script: {instanceID: 6478}
+    - Class: 114
+      Script: {instanceID: 6748}
     - Class: 114
       Script: {instanceID: 6842}
     - Class: 114
@@ -286,15 +299,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4800}
     - Class: 114
-      Script: {instanceID: 5072}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5206}
+      Script: {instanceID: 5204}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 5762}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 6074}
     - Class: 114
-      Script: {instanceID: 6480}
+      Script: {instanceID: 6478}
+    - Class: 114
+      Script: {instanceID: 6748}
     - Class: 114
       Script: {instanceID: 6842}
     - Class: 114
@@ -918,7 +933,7 @@ ScriptsOnlyBuild:
     className: Fracture
   - hash:
       serializedVersion: 2
-      Hash: 02b077c3ed8c8f89edf762e57bd51846
+      Hash: ae6946ad16900bb4d8e401fefb71c9ee
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: WinPoint
@@ -1114,6 +1129,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollRectValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 348aa01aa0c9a12ed93994196a0a0ed4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelTimeTracker
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b

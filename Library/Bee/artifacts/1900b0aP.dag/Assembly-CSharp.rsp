@@ -315,6 +315,7 @@
 "Assets/Scripts/FOVController.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/LevelSelection.cs"
+"Assets/Scripts/LevelTimeTracker.cs"
 "Assets/Scripts/MoveCamera.cs"
 "Assets/Scripts/PauseMenu.cs"
 "Assets/Scripts/PlayerMovement.cs"

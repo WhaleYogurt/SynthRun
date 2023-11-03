@@ -199,9 +199,12 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (wallRunning && tagStandingOn == "Redirect")
             {
-                Vector3 lookDirection = playerCam.forward;
+                Vector3 lookDirection = playerCam.forward + orientation.forward;
+                Debug.Log(lookDirection);
                 float currentSpeed = rb.velocity.magnitude;
                 rb.velocity = lookDirection * currentSpeed;
+                Vector3 boostDirection = orientation.up;
+                rb.AddForce(boostDirection * 1000, ForceMode.Impulse);
             }
             Invoke("ResetJump", jumpCooldown);
             if (wallRunning)
